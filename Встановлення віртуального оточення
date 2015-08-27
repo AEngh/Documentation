@@ -1,0 +1,18 @@
+Запускаємо термінал і вводимо наступні команди:
+sudo apt-get install python-virtualenv
+sudo apt-get install virtualenvwrapper
+Відкриваємо файл bashrc:
+sudo vi .bashrc
+Вставляємо в нього такий рядок:
+export WORKON_HOME=~/.virtualenvs
+Запускаємо команду:
+source .bashrc
+Прописуємо в терміналі наступне:
+mkvirtualenv name_your_virtualenv
+Для вимкнення ВС пишемо наступне:
+deactivate
+Для увімкнення:
+workon name_your_virtualenv
+
+Віртувальне оточення створиться за шляхом:
+home/name/.virtualenvs/name_your_virtualenv
