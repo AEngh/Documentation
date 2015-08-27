@@ -1,0 +1,12 @@
+Запуск віртуального оточення:
+workon name_your_virtualenv
+Встановлення Django версії 1.7.8:
+pip install django==1.7.8
+Встановлення модуля для з’єднання PostgreSQL i Django:
+pip install psycopg2
+
+Команди для роботи і запуску Django:
+python manage.py makemigrations - робить міграцію(рідко використовується)
+python manage.py migrate - робить налаштування міграцій(рідко використовується)
+python manage.py syncdb - робить синхронізую базу в Django
+python mange.py runserver - запускає сервер(в браузері запускається за адресою 127.0.0.1:8000 або localhost:8000)
