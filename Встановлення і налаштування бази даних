@@ -1,0 +1,24 @@
+Відкрити термінал і ввести наступне для встановлення PGAdmin3:
+sudo apt-get install pgadmin3
+Для встановлення бібліотеки:
+sudo apt-­­get install libpq-­­dev python-­­dev
+Для встановлення PostgreSQl:
+sudo apt-get install postgresql postgresql-contrib
+
+Запуск:
+sudo su postgres
+Заходимо:
+psql
+Команди:
+\list - вивести усі бази даних
+\du - вивести усіх юзерів/ролі
+Створення юзера:
+create role nameadmin createdb createuser login password ‘password’ createrole;
+Створення бази даних:
+create database namedb with owner nameadmin encoding ‘UTF8’;
+Надання прав суперюзера створеному користувачеві:
+grant all privileges on database namedb to nameadmin;
+Задаємо пароль для користувача postgres щоб далі мати змогу користуватись PGAdmin3:
+alter user postgres with password ‘postgres’;
+
+Щоб вийти. натисніть Ctrl + D
